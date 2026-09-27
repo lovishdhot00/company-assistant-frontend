@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style_responsive.css">
 </head>
 <body>
-  <div class="sidebar">
+  <aside class="sidebar" id="app-sidebar">
     <div id="project-name">
       <p>Company Assistant</p>
     </div>
@@ -16,23 +16,19 @@
       <div class="conversations">
       </div>
     </div>
-  </div>
+  </aside>
   <div class="chat-window">
+    <button id="sidebar-toggle" type="button" aria-label="Collapse sidebar" aria-controls="app-sidebar" aria-expanded="true" title="Collapse sidebar">☰</button>
     <div class="chat-area">
     </div>
     <form class="input-submit">
-      <label for="files">Choose file :</label>
-      
-      <select id="files" name="files">
-        <option value="file1">file1</option>
-        <option value="file2">file2</option>
-        <option value="file3">file3</option>
-        <option value="file4">file4</option>
-      </select>
       <textarea class="input"></textarea>
       <button type="submit" class="submit"></button>
     </form>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+
 <script src="script.js"></script>
 </body>
 </html> 
